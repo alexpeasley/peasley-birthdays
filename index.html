@@ -3,21 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Birthdays</title>
+    <title>Family Birthdays & Anniversaries</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background: #f4f7f6; display: flex; justify-content: center; padding: 20px; }
-        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
-        h1 { color: #333; text-align: center; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .birthday-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #fafafa; }
-        .name { font-weight: bold; color: #2c3e50; }
-        .date { color: #7f8c8d; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f0f2f5; color: #1c1e21; display: flex; justify-content: center; padding: 40px 20px; line-height: 1.5; }
+        .container { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 600px; }
+        h1 { color: #1a73e8; text-align: center; margin-bottom: 30px; font-size: 2rem; border-bottom: 2px solid #f0f2f5; padding-bottom: 15px; }
+        h2 { font-size: 1.2rem; color: #5f6368; margin-top: 30px; border-left: 4px solid #1a73e8; padding-left: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .row { display: flex; justify-content: space-between; align-items: center; padding: 12px 8px; border-bottom: 1px solid #f8f9fa; transition: background 0.2s; }
+        .row:hover { background: #f8fbff; }
+        .name { font-weight: 600; font-size: 1.1rem; }
+        .date { color: #70757a; font-variant-numeric: tabular-nums; }
+        .anniversary { color: #d93025; background-color: #fff8f7; border-radius: 8px; } /* Distinct style for anniversaries */
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎂 Family Birthdays</h1>
-        <div class="birthday-row"><span class="name">Alex Peasley</span><span class="date">10/07/1986</span></div>
-        <div class="birthday-row"><span class="name">Christina Peasley</span><span class="date">11/22/1986</span></div>
+        <h1>🎂 Family Calendar</h1>
+
+        <h2>January</h2>
+        <div class="row"><span class="name">Grandma Betsy</span><span class="date">Jan 13</span></div>
+        <div class="row"><span class="name">Grandpa Tom</span><span class="date">Jan 21</span></div>
+        <div class="row"><span class="name">Tammy</span><span class="date">Jan 23</span></div>
+        <div class="row"><span class="name">Aunt Jane Parry</span><span class="date">Jan 29</span></div>
+
+        <h2>February</h2>
+        <div class="row"><span class="name">Grandpa George</span><span class="date">Feb 1</span></div>
+
+        <h2>March</h2>
+        <div class="row"><span class="name">Madyson (2013)</span><span class="date">Mar 1</span></div>
+        <div class="row"><span class="name">Ryder (2014) & Warren (2015)</span><span class="date">Mar 10</span></div>
+        <div class="row"><span class="name">Lena (2021)</span><span class="date">Mar 29</span></div>
+        <div class="row anniversary"><span class="name">💍 Jane & Travis (2013)</span><span class="date">Mar 30</span></div>
+
+        <h2>April</h2>
+        <div class="row anniversary"><span class="name">💍 Tammy & Dave (1983)</span><span class="date">Apr 9</span></div>
+        <div class="row"><span class="name">Dave</span><span class="date">Apr 18</span></div>
+
+        <h2>May</h2>
+        <div class="row"><span class="name">Tommy (2021)</span><span class="date">May 8</span></div>
+
+        <h2>June</h2>
+        <div class="row"><span class="name">Amelia (1985)</span><span class="date">Jun 16</span></div>
+        <div class="row"><span class="name">Joel (1984)</span><span class="date">Jun 25</span></div>
+        <div class="row anniversary"><span class="name">💍 Alex & Chrissy (2010)</span><span class="date">Jun 26</span></div>
+
+        <h2>July</h2>
+        <div class="row anniversary"><span class="name">💍 Will & Kelsey</span><span class="date">Jul 14</span></div>
+        <div class="row anniversary"><span class="name">💍 Joel & Amelia (2007)</span><span class="date">Jul 21</span></div>
+        <div class="row"><span class="name">Maxwell (2013)</span><span class="date">Jul 31</span></div>
+
+        <h2>August</h2>
+        <div class="row"><span class="name">Dylan (2015)</span><span class="date">Aug 8</span></div>
+        <div class="row"><span class="name">Will (1992)</span><span class="date">Aug 21</span></div>
+
+        <h2>September</h2>
+        <div class="row"><span class="name">Jackson (2010)</span><span class="date">Sep 16</span></div>
+
+        <h2>October</h2>
+        <div class="row"><span class="name">Alex (1986)</span><span class="date">Oct 7</span></div>
+        <div class="row"><span class="name">Jane (1989)</span><span class="date">Oct 9</span></div>
+        <div class="row"><span class="name">Grandma Marlene</span><span class="date">Oct 16</span></div>
+
+        <h2>November</h2>
+        <div class="row"><span class="name">Mason (2015)</span><span class="date">Nov 2</span></div>
+        <div class="row"><span class="name">Josiah</span><span class="date">Nov 13</span></div>
+        <div class="row"><span class="name">Chrissy (1985)</span><span class="date">Nov 22</span></div>
+        <div class="row"><span class="name">Travis (1976)</span><span class="date">Nov 27</span></div>
+
+        <h2>December</h2>
+        <div class="row"><span class="name">Kelsey (1995)</span><span class="date">Dec 5</span></div>
     </div>
 </body>
 </html>
